@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Customer Application Form" android:textSize="20sp"
+        android:textStyle="bold" android:layout_marginBottom="12dp"/>
+
+    <EditText android:id="@+id/etName" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Name" android:inputType="textPersonName"/>
+    <EditText android:id="@+id/etPhone" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Phone No"
+        android:inputType="phone" android:maxLength="10"/>
+    <EditText android:id="@+id/etDob" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="DOB (tap to select)"/>
+    <EditText android:id="@+id/etEmail" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Email" android:inputType="textEmailAddress"/>
+    <EditText android:id="@+id/etAddress" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Address"
+        android:inputType="textMultiLine" android:minLines="2"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Document Type" android:layout_marginTop="12dp"/>
+    <Spinner android:id="@+id/spDocType" android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+    <EditText android:id="@+id/etDocNumber" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Document Number"/>
+
+    <Button android:id="@+id/btnSubmit" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Submit" android:layout_marginTop="16dp"/>
+    <Button android:id="@+id/btnView" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="View Customers (Firebase)"/>
+    <Button android:id="@+id/btnLogout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Logout"
+        style="@style/Widget.Material3.Button.OutlinedButton"/>
+</LinearLayout>
+</ScrollView>
